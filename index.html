@@ -30,61 +30,67 @@
     </div>
   </header>
 
-  <body>
-    <h4>Ajude o algoritimo a ser mais certeiro</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a
-      pulvinar lacus. Nam at lacus nec tellus congue volutpat. Pellentesque sed
-      dui non sem commodo dignissim. Nullam at nulla et ante volutpat sodales a
-      in felis. Proin rutrum euismod est, ut ullamcorper odio. Aliquam mollis
-      diam quam, in commodo turpis sagittis ac. Sed accumsan risus sit amet
-      metus dignissim aliquet. Nam imperdiet augue mi, et aliquam magna
-      convallis quis. Curabitur feugiat sem ut magna luctus, non blandit leo
-      rutrum. Integer porta, eros non dictum molestie, purus mi mollis ex, sit
-      amet tempus augue massa id lacus. Ut tincidunt magna sed aliquam finibus.
-      Aenean faucibus pretium ipsum, in rhoncus ipsum tristique vulputate. Nulla
-      tempor turpis mi, nec tempus lacus fermentum et. Suspendisse potenti. In
-      et tortor ut leo eleifend accumsan sed sed velit.
-      <br />
-      Nunc volutpat egestas bibendum. Sed egestas diam sit amet neque semper, et
-      ultricies mi vulputate. Nullam ultricies est suscipit ante aliquam
-      rhoncus. Proin feugiat orci enim, in placerat turpis sollicitudin nec.
-      Aenean ornare vitae diam vitae scelerisque. Duis tincidunt dapibus magna,
-      viverra aliquam risus facilisis at. Aenean eros sapien, porttitor in
-      bibendum vel, interdum at neque. Duis posuere ultrices justo, at
-      condimentum arcu laoreet tincidunt. Cras tristique odio et leo fringilla,
-      feugiat posuere velit egestas. Phasellus sed elit pretium, porta nisi
-      faucibus, sodales nisi.
-    </p>
+  <div>
+    <div class="titulo">
+      <h4>Ajude o algoritimo a ser mais certeiro</h4>
+    </div>
 
-    <form>
-      <label for="seunome">Seu Nome:</label>
-      <input type="text" placeholder="Digite seu nome aqui" />
+    <div class="text-form">
+      <p class="body-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris
+        rhoncus erat sed interdum dignissim. Suspendisse semper pretium
+        consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus
+        quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod
+        augue vel egestas. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor.
+        Vivamus et arcu non felis tristique eleifend. 
+        <br><br>
+        Morbi eu condimentum urna.
+        Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis
+        lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a
+        ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut,
+        ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet
+        nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit
+        libero, at mattis augue est vel metus.
+      </p>
 
-      <label for="email">E-mail:</label>
-      <input type="email" placeholder="seu e-mail@email.com.br" />
+      <form class="formulario">
+        <label for="seunome">Seu Nome:</label>
+        <input type="text" placeholder="Digite seu nome aqui" />
 
-      <label for="cpf">CPF:</label>
-      <input type="number" placeholder="11111111111" />
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="seu e-mail@email.com.br" />
 
-      <label for="radio-masculino"><input type="radio" />Masculino</label>
-      <label for="radio-masculino"><input type="radio" />Feminino</label>
+        <label for="cpf">CPF:</label>
+        <input type="number" placeholder="11111111111" />
 
-      <input type="submit" value="Enviar" />
-    </form>
+        <label for="radio-masculino"><input type="radio" />Masculino</label>
+        <label for="radio-masculino"><input type="radio" />Feminino</label>
 
-    <h5>Sua seleção especial</h5>
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
 
-    <button type="submit">Comprar</button>
-    <button type="submit">Comprar</button>
-    <button type="submit">Comprar</button>
-    <button type="submit">Comprar</button>
-    <button type="submit">Comprar</button>
-    <button type="submit">Comprar</button>
-    <button type="submit">Comprar</button>
-    <button type="submit">Comprar</button>
+    <div class="wrapper">
+      <div class="wrapper_line"></div>
+      <span class="wrapper_text">Sua seleção especial</span>
+  </div>
 
-    <button type="submit">Ainda mais produtos aqui!</button>
+    <div class="button-api">
+    <button class="button-api-submit" type="submit">Comprar</button>
+    <button class="button-api-submit" type="submit">Comprar</button>
+    <button class="button-api-submit" type="submit">Comprar</button>
+    <button class="button-api-submit" type="submit">Comprar</button>
+    <button class="button-api-submit" type="submit">Comprar</button>
+    <button class="button-api-submit" type="submit">Comprar</button>
+    <button class="button-api-submit" type="submit">Comprar</button>
+    <button class="button-api-submit" type="submit">Comprar</button>
+   
+    </div>
+    
+    <button class="mais"type="submit">Ainda mais produtos aqui!</button>
+  </div>
 
     <h5>Compartilhe a novidade</h5>
 
@@ -105,11 +111,11 @@
     <div class="footer-index">
       <div class="footer-text">
         <p>Testando suas habilidades em HTML, CSS e JS.</p>
-        <br>
+        <br />
         <p>Linx Impulse</p>
-        <br>
+        <br />
         <p>2021</p>
-        <br>
+        <br />
         <p>Por André Eigenheer</p>
       </div>
     </div>
