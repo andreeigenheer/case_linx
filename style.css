@@ -1,4 +1,4 @@
-header{
+header {
   width: 100vw;
 }
 
@@ -65,8 +65,14 @@ header{
 
 /* Estilização do corpo */
 
-body{
+body {
   width: 100vw;
+}
+
+.secao-um{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
+
 }
 
 .titulo {
@@ -77,9 +83,8 @@ body{
   margin-left: 40px;
   margin-bottom: 20px;
   text-align: left;
-  font: normal normal normal 20px/24px Helvetica Neue;
+  font-size:20px; 
   letter-spacing: 0px;
-  color: #888888;
   opacity: 1;
 }
 
@@ -94,23 +99,19 @@ body{
 }
 
 .body-text {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
   margin-left: 20px;
   width: 500px;
   line-height: 20px;
 }
 
 .formulario {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #707070;
   font-size: 12px;
   display: grid;
   width: 500px;
   line-height: 30px;
 }
 
-.formulario-input{
+.formulario-input {
   background-color: #ffffff;
   border: 1px solid #707070;
   opacity: 1;
@@ -118,29 +119,29 @@ body{
   height: 30px;
 }
 
-.formulario-button{
+.formulario-button {
   background-color: #ffffff;
   border: 1px solid #707070;
   border-radius: 4px;
   opacity: 1;
   width: 340px;
   height: 39px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
   font-size: 16px;
-
-
 }
 
-.genero{
+.genero {
   display: flex;
-  justify-content:left;
   padding: 10px;
+  
+}
+
+.genero-radio{
+  margin-right: 45px;
 }
 
 .wrapper {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   /* width: 200px; */
@@ -154,25 +155,21 @@ body{
 }
 
 .wrapper_text {
- 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #888888;
   background-color: white;
   padding: 0.5rem;
   z-index: 1;
-    
 }
 
-.button-api{
+.button-api {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-
-
 }
 
-.button-api-submit{
+.button-api-submit {
   font-size: 16px;
   color: #888888;
   font-family: Arial, Helvetica, sans-serif;
@@ -184,44 +181,11 @@ body{
   opacity: 1;
 }
 
-.mais{
+.mais {
   text-align: center;
   margin: 50px 0 100px 0;
 }
-.mais-button{
-  
-  color: #888888;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  background-color: #ffffff;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  opacity: 1;
-  width: 260px;
-  height: 39px; 
-
-}
-
-/* Estilização Enviar e-mail */
-
-.newsletter{
-  color:#888888 ;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding: 10px;
-}
-
-.newsletter-text{
-  font-size: 16px;
-}
-
-.newsletter-enviar{
-  font-size: 14px;
-  padding: 20px;
- 
-}
-
-.newsletter-button{
+.mais-button {
   color: #888888;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -233,12 +197,50 @@ body{
   height: 39px;
 }
 
+/* Estilização Enviar e-mail */
 
+.newsletter {
+  color: #888888;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
 
+.newsletter-text {
+  font-size: 16px;
+}
+
+.newsletter-enviar {
+  font-size: 14px;
+  padding: 20px;
+}
+
+.newsletter-label {
+  font-size: 12px;
+}
+
+.newsletter-input {
+  width: 340px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.newsletter-button {
+  color: #888888;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+  width: 260px;
+  height: 39px;
+}
 
 /* Estilização footer */
 
-footer{
+footer {
   width: 100vw;
 }
 
