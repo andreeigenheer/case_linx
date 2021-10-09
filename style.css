@@ -1,3 +1,5 @@
+/* |Estilização do cabeçalho */
+
 header {
   width: 100vw;
 }
@@ -49,30 +51,10 @@ header {
   display: inline;
 }
 
-.footer-index {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  color: #ffffff;
-  margin: auto;
-  width: 100vw;
-  height: 293px;
-  background: #707070 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  opacity: 1;
-  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
-}
-
 /* Estilização do corpo */
 
 body {
   width: 100vw;
-}
-
-.secao-um{
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
-
 }
 
 .titulo {
@@ -86,6 +68,8 @@ body {
   font-size:20px; 
   letter-spacing: 0px;
   opacity: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
 }
 
 .text-form {
@@ -94,14 +78,19 @@ body {
   margin: 5px 20px 100px 20px;
   font-size: 12px;
   grid-template-columns: 1fr 1fr;
-  width: 100vw;
-  height: 220px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
+  /* width: 100vw; 
+  height: 220px; */
 }
 
 .body-text {
   margin-left: 20px;
   width: 500px;
   line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
 }
 
 .formulario {
@@ -109,6 +98,8 @@ body {
   display: grid;
   width: 500px;
   line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
 }
 
 .formulario-input {
@@ -117,9 +108,12 @@ body {
   opacity: 1;
   width: 340px;
   height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
 }
 
 .formulario-button {
+  color: #888888;
   background-color: #ffffff;
   border: 1px solid #707070;
   border-radius: 4px;
@@ -127,12 +121,15 @@ body {
   width: 340px;
   height: 39px;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .genero {
   display: flex;
   padding: 10px;
-  
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
 }
 
 .genero-radio{
@@ -227,7 +224,7 @@ body {
   opacity: 1;
 }
 
-.newsletter-button {
+.newsletter-button{
   color: #888888;
   font-size: 16px;
   background-color: #ffffff;
@@ -238,11 +235,63 @@ body {
   height: 39px;
 }
 
+/* Estilização pagina e-mail */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+color:#888888 ;
+
+}
+
+.button-api-submit-email{
+  width: 200px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
+  
+}
+
+.button-api-email{
+text-align: center;
+}
+
+.button-email{
+background-color: #ffffff;
+border: 1px solid #707070;
+border-radius: 4px;
+opacity: 1;
+font-family: Arial, Helvetica, sans-serif;
+color: #888888;
+font-size:16px ;
+width: 383px;
+height: 39px;
+}
+
+
 /* Estilização footer */
 
 footer {
   width: 100vw;
 }
+
+.footer-index {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  margin: auto;
+  width: 100vw;
+  height: 293px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+}
+
 
 .footer-text {
   margin: 100px 0 0 40px;
