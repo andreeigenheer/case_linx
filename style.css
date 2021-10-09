@@ -1,3 +1,7 @@
+header{
+  width: 100vw;
+}
+
 .header-index {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -61,6 +65,10 @@
 
 /* Estilização do corpo */
 
+body{
+  width: 100vw;
+}
+
 .titulo {
   top: 420px;
   left: 20px;
@@ -100,13 +108,33 @@
   display: grid;
   width: 500px;
   line-height: 30px;
- 
+}
+
+.formulario-input{
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  opacity: 1;
+  width: 340px;
+  height: 30px;
+}
+
+.formulario-button{
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+  width: 340px;
+  height: 39px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
+  font-size: 16px;
+
 
 }
 
 .genero{
   display: flex;
-  justify-content:center;
+  justify-content:left;
   padding: 10px;
 }
 
@@ -136,7 +164,31 @@
     
 }
 
+.button-api{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+
+}
+
+.button-api-submit{
+  font-size: 16px;
+  color: #888888;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+}
+
 .mais{
+  text-align: center;
+  margin: 50px 0 100px 0;
+}
+.mais-button{
   
   color: #888888;
   font-family: Arial, Helvetica, sans-serif;
@@ -146,7 +198,7 @@
   border-radius: 4px;
   opacity: 1;
   width: 260px;
-  height: 39px;
+  height: 39px; 
 
 }
 
@@ -156,7 +208,7 @@
   color:#888888 ;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding: 50px;
+  padding: 10px;
 }
 
 .newsletter-text{
@@ -185,6 +237,10 @@
 
 
 /* Estilização footer */
+
+footer{
+  width: 100vw;
+}
 
 .footer-text {
   margin: 100px 0 0 40px;
