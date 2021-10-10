@@ -1,14 +1,16 @@
-/* |Estilização do cabeçalho */
-
-header {
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#888888 ;
   width: 100vw;
-}
+    
+  }
+
+/* |Estilização do cabeçalho */
 
 .header-index {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
-  width: 100vw;
   height: 399px;
   background: #707070 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
@@ -53,10 +55,6 @@ header {
 
 /* Estilização do corpo */
 
-body {
-  width: 100vw;
-}
-
 .titulo {
   top: 420px;
   left: 20px;
@@ -73,33 +71,28 @@ body {
 }
 
 .text-form {
-  display: grid;
+  display:flex; 
   justify-content: center;
-  margin: 5px 20px 100px 20px;
+  margin-bottom: 80px;
   font-size: 12px;
-  grid-template-columns: 1fr 1fr;
   line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #888888;
-  /* width: 100vw; 
-  height: 220px; */
+  height: 220px; 
+  
 }
 
 .body-text {
-  margin-left: 20px;
+ 
   width: 500px;
   line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
+ margin-right: 50px;
 }
 
 .formulario {
-  font-size: 12px;
   display: grid;
   width: 500px;
   line-height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
 }
 
 .formulario-input {
@@ -108,8 +101,17 @@ body {
   opacity: 1;
   width: 340px;
   height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
+ 
+}
+
+.genero {
+  display: flex;
+  padding: 10px;
+  
+}
+
+.genero-radio{
+  margin-right: 45px;
 }
 
 .formulario-button {
@@ -125,23 +127,11 @@ body {
   
 }
 
-.genero {
-  display: flex;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
-}
-
-.genero-radio{
-  margin-right: 45px;
-}
-
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  /* width: 200px; */
   height: 100px;
 }
 
@@ -152,9 +142,7 @@ body {
 }
 
 .wrapper_text {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color: #888888;
   background-color: white;
   padding: 0.5rem;
   z-index: 1;
@@ -162,17 +150,19 @@ body {
 
 .button-api {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-}
+ }
+
 
 .button-api-submit {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #888888;
-  font-family: Arial, Helvetica, sans-serif;
   width: 200px;
   height: 30px;
-  background-color: #ffffff;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 6px #00000029;
   border: 1px solid #707070;
   border-radius: 4px;
   opacity: 1;
@@ -197,19 +187,21 @@ body {
 /* Estilização Enviar e-mail */
 
 .newsletter {
-  color: #888888;
-  font-family: Arial, Helvetica, sans-serif;
+ 
   text-align: center;
   padding: 10px;
 }
 
 .newsletter-text {
   font-size: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .newsletter-enviar {
   font-size: 14px;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 .newsletter-label {
@@ -237,13 +229,76 @@ body {
 
 /* Estilização pagina e-mail */
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-color:#888888 ;
+.body-email{
+  max-width: 601px;
+}
+
+/* Estilização do cabeçalho */
+
+.header-email {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  height: 198px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 71%);
+}
+
+.header-email-text {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.linha_1-email {
+  font-size: 20px;
+}
+
+.email-h3 {
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  width: 360px;
+  display: inline-block;
+  justify-content:center;
+ 
+}
+
+.linha_3-email {
+  font-size: 14px;
+  font-weight: normal;
+ margin-top: 10px; 
+ line-height: 20px;
+}
+
+.text-introduction{
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  
+}
+
+.introduction-title{
+  color: #888888;
+  font-size: 24px;
+  font:bold;
+  margin-bottom:20px ;
 
 }
 
+.email{
+  display:flex; 
+   justify-content: center;
+   padding: 30px;
+   margin-bottom: 20px;
+   gap: 30px;
+ }
+
+
 .button-api-submit-email{
+  
   width: 200px;
   height: 30px;
   background-color: #ffffff;
@@ -274,10 +329,6 @@ height: 39px;
 
 /* Estilização footer */
 
-footer {
-  width: 100vw;
-}
-
 .footer-index {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -296,23 +347,7 @@ footer {
 .footer-text {
   margin: 100px 0 0 40px;
   padding: 70px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
+  line-height: 20px;
 }
 
-.button-api {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
-}
-
-.button-api-submit {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #888888;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 1px 6px #00000029;
-  border: 1px solid #707070;
-  border-radius: 4px;
-}
