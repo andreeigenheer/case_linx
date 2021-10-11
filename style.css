@@ -1,25 +1,35 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  color:#888888 ;
-  width: 100vw;
+html {
+  height: 100%;
+  min-height: 100%;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#888888;
+}
 
 /* |Estilização do cabeçalho */
 
 .header-index {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
+  width: 100%;
   height: 399px;
   background: #707070 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 71%);
+  line-height: 10px;
 }
 
 .header-text {
-  margin: 70px 0 50px 0;
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .linha_1 {
@@ -27,7 +37,6 @@ body{
 }
 
 .header-h3 {
-  margin: 10px 0 25px 0;
   font-size: 40px;
   font-weight: bold;
 }
@@ -36,8 +45,17 @@ body{
   font-size: 16px;
 }
 
-.text-button {
+.button-header {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #888888;
+  justify-content:center;
+  display:flex;
+  flex-direction: row;
+  padding:30px ;
+}
+
+.text-button {
   font-size: 14px;
   color: #888888;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -45,49 +63,37 @@ body{
   border: 1px solid #707070;
   border-radius: 4px;
   opacity: 1;
-  top: 230px;
-  left: 771px;
   width: 160px;
   height: 40px;
-  margin: 0 20px 0 20px;
   display: inline;
-}
+  justify-content:center; 
+  margin: 0 20px 0 20px;
+} 
 
 /* Estilização do corpo */
 
-/* .titulo {
-  top: 420px;
-  left: 20px;
-  width: 332px;
-  height: 23px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-  text-align: left;
-  font-size:20px; 
-  letter-spacing: 0px;
-  opacity: 1;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
-} */
-
 .text-form {
   display:flex; 
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 80px;
   font-size: 12px;
   line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #888888;
-  height: 220px; 
-  
+  width: 100%;
 }
 
 .body-text {
+ width: 500px;
+ line-height: 20px;
+ margin-right: 70px; 
  
-  width: 500px;
-  line-height: 20px;
- margin-right: 50px;
-}
+} 
+
+.titulo {
+   font-size:20px; 
+ }
 
 .formulario {
   display: grid;
@@ -106,13 +112,14 @@ body{
 
 .genero {
   display: flex;
-  padding: 10px;
+  flex-direction: row;
+  margin: 10px 0 ;
   
 }
 
 .genero-radio{
   margin-right: 45px;
-}
+ }
 
 .formulario-button {
   color: #888888;
@@ -127,6 +134,12 @@ body{
   
 }
 
+.api{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -138,7 +151,7 @@ body{
 .wrapper_line {
   position: absolute;
   border: 1px solid #888888;
-  width: 100vw;
+  width: 100%;
 }
 
 .wrapper_text {
@@ -149,11 +162,22 @@ body{
 }
 
 .button-api {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  
+  
  }
 
+ .button-api-dois {
+  
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  
+ }
 
 .button-api-submit {
   font-family: Arial, Helvetica, sans-serif;
@@ -168,7 +192,7 @@ body{
   opacity: 1;
 }
 
-.mais {
+.mais-api {
   text-align: center;
   margin: 50px 0 100px 0;
 }
@@ -185,6 +209,12 @@ body{
 }
 
 /* Estilização Enviar e-mail */
+
+.novidade{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
 
 .newsletter {
  
@@ -229,13 +259,15 @@ body{
 
 /* Estilização footer */
 
+
+
 .footer-index {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #ffffff;
   margin: auto;
-  width: 100vw;
+  width: 100%;
   height: 293px;
   background: #707070 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
@@ -250,6 +282,46 @@ body{
   font-size: 12px;
   line-height: 20px;
 }
+
+@media(max-width: 420px){
+
+  .header-index{
+   justify-content: center;
+   flex-direction: row;
+}
+
+.button-header{
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+} 
+
+.text-form{
+  flex-direction: column;
+  justify-content: center;
+} 
+
+.button-api{
+  display: grid;
+}
+
+.button-api-dois{
+  display: none;
+}
+
+.newsletter{
+  justify-content: center;
+}
+
+}
+
+
+
+
+
+
+
+
 
 /* Estilização pagina e-mail */
 
@@ -354,6 +426,8 @@ height: 39px;
 /* Estilização footer-email */
 
 .footer-email {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -365,4 +439,6 @@ height: 39px;
   opacity: 1;
   clip-path: polygon(0 60%, 100% 35%, 100% 100%, 0 100%);
 }
+
+
 
