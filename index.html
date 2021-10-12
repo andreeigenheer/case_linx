@@ -100,7 +100,7 @@
 
   </section>
 
-  <section class="newsletter">
+  
     <div class="wrapper">
       <div class="wrapper_line"></div>
       <span class="wrapper_text">Compartilhe a novidade</span>
@@ -111,20 +111,24 @@
         <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
       </div>
 
-      <form class="newsletter">
+      <form class="newsletter-form">
+       
         <div class="newsletter-enviar">
+          <div class="newsletter-nome">
+            <label class="newsletter-label" for="amigo">Nome do seu amigo:</label>
+            <input class="newsletter-input" type="text" required name="nome" />
+          </div>
 
-          <label class="newsletter-label" for="amigo">Nome do seu amigo:</label>
-          <input class="newsletter-input" type="text" required name="nome" />
-
-          <label class="newsletter-label" for="email">E-mail:</label>
-          <input class="newsletter-input" type="email" required name="email" />
-
+           <div class="newsletter-email">
+             <label class="newsletter-label" for="email">E-mail:</label>
+             <input class="newsletter-input" type="email" required name="email" />
+            </div>
         </div>
 
         <button class="newsletter-button" type="submit">Enviar agora</button>
       </form>
     </section>
+ 
 
 
     <footer>
@@ -138,8 +142,7 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="script.js"></script>
 
 </body>

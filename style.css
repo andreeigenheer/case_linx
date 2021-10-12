@@ -1,8 +1,8 @@
-body{
+body {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  color:#888888;
+  color: #888888;
 }
 
 /* |Estilização do cabeçalho */
@@ -23,7 +23,7 @@ body{
 }
 
 .header-text {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .linha_1 {
@@ -43,10 +43,10 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #888888;
-  justify-content:center;
-  display:flex;
+  justify-content: center;
+  display: flex;
   flex-direction: row;
-  padding:30px ;
+  padding: 30px;
 }
 
 .text-button {
@@ -60,14 +60,14 @@ body{
   width: 160px;
   height: 40px;
   display: inline;
-  justify-content:center; 
+  justify-content: center;
   margin: 0 20px 0 20px;
-} 
+}
 
 /* Estilização do corpo */
 
 .text-form {
-  display:flex; 
+  display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 80px;
@@ -79,21 +79,19 @@ body{
 }
 
 .body-text {
- width: 520px;
- line-height: 20px;
- margin-right: 70px; 
- justify-content: center;
- 
- 
-} 
+  width: 520px;
+  line-height: 20px;
+  margin-right: 70px;
+  justify-content: center;
+}
 
 .titulo {
-   font-size:20px; 
- }
+  font-size: 20px;
+}
 
 .formulario {
   display: grid;
-  width: 500px;
+  width: 340px;
   line-height: 30px;
 }
 
@@ -103,19 +101,17 @@ body{
   opacity: 1;
   width: 340px;
   height: 30px;
- 
 }
 
 .genero {
   display: flex;
   flex-direction: row;
-  margin: 10px 0 ;
-  
+  margin: 10px 0;
 }
 
-.genero-radio{
+.genero-radio {
   margin-right: 45px;
- }
+}
 
 .formulario-button {
   color: #888888;
@@ -127,14 +123,12 @@ body{
   height: 39px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
-.api{
+.api {
   display: block;
   flex-direction: column;
   max-width: 100%;
-
 }
 
 .wrapper {
@@ -158,14 +152,13 @@ body{
   z-index: 1;
 }
 
-.container-produtos{
+.container-produtos {
   display: flex;
   flex-wrap: wrap;
   width: 930px;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
-   
 }
 
 .lista-um {
@@ -176,19 +169,19 @@ body{
   display: flex;
 }
 
-.lista-tres{
-  display:flex;
-}
-
-.lista-quatro{
+.lista-tres {
   display: flex;
 }
 
-.produtos{
+.lista-quatro {
+  display: flex;
+}
+
+.produtos {
   padding: 20px;
 }
 
-.imagem-produtos{
+.imagem-produtos {
   width: 200px;
   height: 150px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -204,25 +197,23 @@ body{
   opacity: 1;
 }
 
-.descricao{
+.descricao {
   text-align: left;
   font: normal normal normal 12px/16px Helvetica Neue;
   letter-spacing: 0px;
   color: #888888;
   opacity: 1;
-
 }
 
-.preco-antigo{
+.preco-antigo {
   text-align: left;
   font: normal normal normal 12px/16px Helvetica Neue;
   letter-spacing: 0px;
   color: #888888;
   opacity: 1;
-
 }
 
-.preco{
+.preco {
   text-align: left;
   font: normal normal bold 16px/16px Helvetica Neue;
   letter-spacing: 0px;
@@ -230,7 +221,7 @@ body{
   opacity: 1;
 }
 
-.parcelamento{
+.parcelamento {
   text-align: left;
   font: normal normal normal 12px/16px Helvetica Neue;
   letter-spacing: 0px;
@@ -239,7 +230,6 @@ body{
 }
 
 .button-api {
-  
   width: 200px;
   height: 30px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -251,21 +241,21 @@ body{
   letter-spacing: 0px;
   color: #888888;
   opacity: 1;
-   
- }
+}
 
-.mais-api  {
+.mais-api {
   text-align: center;
   margin: 50px 0 100px 0;
 }
 
-.menos-api{
+.menos-api {
   display: none;
   text-align: center;
   margin: 50px 0 100px 0;
 }
 
-.ver-mais-button, .ver-menos-button  {
+.ver-mais-button,
+.ver-menos-button {
   color: #888888;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -279,16 +269,8 @@ body{
 
 /* Estilização Enviar e-mail */
 
-.novidade{
- display: flex;
- flex-direction: column;
- width: 100%;
-}
-
-.newsletter {
- 
+.novidade {
   text-align: center;
-  padding: 10px;
 }
 
 .newsletter-text {
@@ -297,14 +279,34 @@ body{
   margin-bottom: 20px;
 }
 
-.newsletter-enviar {
+.newsletter-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 14px;
-  padding: 20px;
   margin-bottom: 40px;
+}
+
+.newsletter-enviar {
+  display: flex;
+}
+
+.newsletter-nome {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-email {
+  margin-left: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .newsletter-label {
   font-size: 12px;
+  text-align: left;
 }
 
 .newsletter-input {
@@ -313,9 +315,10 @@ body{
   background-color: #ffffff;
   border: 1px solid #707070;
   opacity: 1;
+  margin-top: 5px;
 }
 
-.newsletter-button{
+.newsletter-button {
   color: #888888;
   font-size: 16px;
   background-color: #ffffff;
@@ -327,8 +330,6 @@ body{
 }
 
 /* Estilização footer */
-
-
 
 .footer-index {
   text-align: center;
@@ -343,7 +344,6 @@ body{
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
 }
 
-
 .footer-text {
   margin: 50px 0px;
   padding: 70px;
@@ -353,8 +353,9 @@ body{
 
 /* Estilização pagina e-mail */
 
-.body-email{
-  max-width: 600px;
+body-email{
+
+  margin-left: 50px;
 }
 
 /* Estilização do cabeçalho */
@@ -363,6 +364,7 @@ body{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
+  width: 601px;
   height: 198px;
   background: #707070 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
@@ -370,7 +372,7 @@ body{
 }
 
 .header-email-text {
-  margin-top: 30px;
+  
   font-size: 14px;
 }
 
@@ -383,72 +385,129 @@ body{
   font-size: 40px;
   text-align: center;
   font-weight: bold;
-  width: 360px;
   display: inline-block;
-  justify-content:center;
- 
+  justify-content: center;
 }
 
 .linha_3-email {
   font-size: 14px;
   font-weight: normal;
- margin-top: 10px; 
- line-height: 20px;
+  margin-top: 10px;
+  line-height: 20px;
 }
 
-.text-introduction{
+.text-introduction {
+  width: 601px;
   font-size: 12px;
   line-height: 20px;
   margin-bottom: 40px;
   padding: 20px;
-  
 }
 
-.introduction-title{
+.introduction-title {
   color: #888888;
   font-size: 24px;
-  font:bold;
-  margin-bottom:20px ;
-
+  font: bold;
+  margin-bottom: 20px;
 }
 
-.email{
-  display:flex; 
-   justify-content: center;
-   padding: 30px;
-   margin-bottom: 20px;
-   gap: 30px;
- }
+.api-email{
+  width: 601px;
+}
 
+.container-produtos-email {
+  display: flex;
+  flex-wrap: wrap;
+  width: 443px;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
 
-.button-api-submit-email{
-  
+.lista-um-email {
+  display: flex;
+}
+
+.produtos-email {
+  padding: 20px;
+}
+
+.imagem-produtos-email {
+  width: 200px;
+  height: 150px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.produtos-nome-email {
+  text-align: left;
+  font: normal normal normal 14px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.descricao-email {
+  text-align: left;
+  font: normal normal normal 12px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.preco-antigo-email {
+  text-align: left;
+  font: normal normal normal 12px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.preco-email {
+  text-align: left;
+  font: normal normal bold 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.parcelamento-email {
+  text-align: left;
+  font: normal normal normal 12px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.button-comprar-email {
   width: 200px;
   height: 30px;
-  background-color: #ffffff;
-  border-radius: 4px;
+  background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
-  font-size: 16px;
+  border-radius: 4px;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.button-api-email {
+  text-align: center;
+}
+
+.button-email {
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
   font-family: Arial, Helvetica, sans-serif;
   color: #888888;
-  
-}
-
-.button-api-email{
-text-align: center;
-}
-
-.button-email{
-background-color: #ffffff;
-border: 1px solid #707070;
-border-radius: 4px;
-opacity: 1;
-font-family: Arial, Helvetica, sans-serif;
-color: #888888;
-font-size:16px ;
-width: 383px;
-height: 39px;
-
+  font-size: 16px;
+  width: 383px;
+  height: 39px;
 }
 
 /* Estilização footer-email */
@@ -467,5 +526,3 @@ height: 39px;
   opacity: 1;
   clip-path: polygon(0 60%, 100% 35%, 100% 100%, 0 100%);
 }
-
-

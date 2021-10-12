@@ -77,8 +77,7 @@ $(".mais-api").click(() => {
       products2.forEach((item) => {
         $(`#produtos-linha-quatro`).append(`<div class="produtos"> 
         <img class="imagem-produtos" src="http:${item.image}">
-        
-        <h5 class="produtos-nome">${item.name}</h5>
+         <h5 class="produtos-nome">${item.name}</h5>
         <p class="descricao">${item.description}</p>
         <p class="preco-antigo">De: R$${item.oldPrice}</p>
         <p class="preco"> Por: R$${item.price}</p>
