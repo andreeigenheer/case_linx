@@ -17,7 +17,7 @@ fetch(
 
     products1.forEach((item) => {
       $(`#produtos-linha-um`).append(`<div class="produtos"> 
-            <img class="imagem-produtos" src="${item.image}">
+            <img class="imagem-produtos" src="http:${item.image}">
             <h5 class="produtos-nome">${item.name}</h5>
             <p class="descricao">${item.description}</p>
             <p class="preco-antigo">De: R$${item.oldPrice}</p>
@@ -29,7 +29,7 @@ fetch(
     });
     products2.forEach((item) => {
       $(`#produtos-linha-dois`).append(`<div class="produtos"> 
-            <img class="imagem-produtos" src="${item.image}">
+            <img class="imagem-produtos" src="http:${item.image}">
             <h5 class="produtos-nome">${item.name}</h5>
             <p class="descricao">${item.description}</p>
             <p class="preco-antigo">De: R$${item.oldPrice}</p>
@@ -42,8 +42,8 @@ fetch(
   });
 
 $(".mais-api").click(() => {
-  $(".mais-button").css("display", "none");
-  $(".verMenos-button").css("display", "block");
+  $(".mais-api").css("display", "none");
+  $(".menos-api").css("display", "block");
 
   fetch(
     `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2`
@@ -63,7 +63,7 @@ $(".mais-api").click(() => {
       console.log(products1);
       products1.forEach((item) => {
         $(`#produtos-linha-tres`).append(`<div class="produtos"> 
-        <img class="imagem-produtos" src="${item.image}">
+        <img class="imagem-produtos" src="http:${item.image}">
                     <h5 class="produtos-nome">${item.name}</h5>
             <p class="descricao">${item.description}</p>
             <p class="preco-antigo">De: R$${item.oldPrice}</p>
@@ -76,7 +76,7 @@ $(".mais-api").click(() => {
 
       products2.forEach((item) => {
         $(`#produtos-linha-quatro`).append(`<div class="produtos"> 
-        <img class="imagem-produtos" src="${item.image}">
+        <img class="imagem-produtos" src="http:${item.image}">
         
         <h5 class="produtos-nome">${item.name}</h5>
         <p class="descricao">${item.description}</p>
@@ -90,9 +90,9 @@ $(".mais-api").click(() => {
     });
 });
 
-$(".verMenos-button").click(() => {
+$(".menos-api").click(() => {
   $("#produtos-linha-tres").remove();
   $("#produtos-linha-quatro").remove();
-  $(".verMenos-button").css("display", "none");
-  $(".mais-button").css("display", "block");
+  $(".menos-api").css("display", "none");
+  $(".mais-api").css("display", "block");
 });
