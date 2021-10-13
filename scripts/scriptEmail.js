@@ -12,9 +12,9 @@ fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?pag
               <img class="imagem-produtos-email" src="http:${item.image}">
               <h5 class="produtos-nome-email">${item.name}</h5>
               <p class="descricao-email">${item.description}</p>
-              <p class="preco-antigo-email">De: R$${item.oldPrice}</p>
-              <p class="preco-email"> Por: R$${item.price}</p>
-              <p class="parcelamento-email"> ou ${item.installments.count}x de R$${item.installments.value}</p>
+              <p class="preco-antigo-email">De: R$${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco-email"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="parcelamento-email"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de R$${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
               <button class="button-comprar-email">Comprar</button>
               
               </div>`);

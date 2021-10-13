@@ -20,9 +20,9 @@ fetch(
             <img class="imagem-produtos" src="http:${item.image}">
             <h5 class="produtos-nome">${item.name}</h5>
             <p class="descricao">${item.description}</p>
-            <p class="preco-antigo">De: R$${item.oldPrice}</p>
-            <p class="preco"> Por: R$${item.price}</p>
-            <p class="parcelamento"> ou ${item.installments.count}x de R$${item.installments.value}</p>
+            <p class="preco-antigo">De:${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de ${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
             <button class="button-api">Comprar</button>
             
             </div>`);
@@ -32,9 +32,9 @@ fetch(
             <img class="imagem-produtos" src="http:${item.image}">
             <h5 class="produtos-nome">${item.name}</h5>
             <p class="descricao">${item.description}</p>
-            <p class="preco-antigo">De: R$${item.oldPrice}</p>
-            <p class="preco"> Por: R$${item.price}</p>
-            <p class="parcelamento"> ou ${item.installments.count}x de R$${item.installments.value}</p>
+            <p class="preco-antigo">De: ${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de ${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
             <button class="button-api">Comprar</button>
              
             </div>`);
@@ -66,9 +66,9 @@ $(".mais-api").click(() => {
         <img class="imagem-produtos" src="http:${item.image}">
                     <h5 class="produtos-nome">${item.name}</h5>
             <p class="descricao">${item.description}</p>
-            <p class="preco-antigo">De: R$${item.oldPrice}</p>
-            <p class="preco"> Por: R$${item.price}</p>
-            <p class="parcelamento"> ou ${item.installments.count}x de R$${item.installments.value}</p>
+            <p class="preco-antigo">De:${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de R$${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
             <button class="button-api">Comprar</button>
          
             </div>`);
@@ -79,9 +79,9 @@ $(".mais-api").click(() => {
         <img class="imagem-produtos" src="http:${item.image}">
          <h5 class="produtos-nome">${item.name}</h5>
         <p class="descricao">${item.description}</p>
-        <p class="preco-antigo">De: R$${item.oldPrice}</p>
-        <p class="preco"> Por: R$${item.price}</p>
-        <p class="parcelamento"> ou ${item.installments.count}x de R$${item.installments.value}</p>
+        <p class="preco-antigo">De: R$${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de R$${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
         <button class="button-api">Comprar</button>
             
             </div>`);
