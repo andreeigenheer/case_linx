@@ -19,7 +19,7 @@ O case foi feito nos seguintes passos:
 - Criação das paginas em HTML
 - Criação do arquivo CSS
 - Estilização da pagina
-- Criaão da API
+- Criação da API
 - Deixando a pagina responsiva
 - Ajustando detalhes finais
 
