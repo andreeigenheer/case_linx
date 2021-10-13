@@ -1,6 +1,6 @@
 # case_linx
 
-Sobre o desafio
+Sobre o desafio:
 O desafio consiste no desenvolvimento do layout de uma landing page com uma grade de produtos e um formulário de newsletter. O principal desafio era transformar o layout em uma página funcional.
 
 Link do layout: https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614
