@@ -18,11 +18,12 @@ fetch(
     products1.forEach((item) => {
       $(`#produtos-linha-um`).append(`<div class="produtos"> 
             <img class="imagem-produtos" src="http:${item.image}">
-            <h5 class="produtos-nome">${item.name}</h5>
+            <div class="produtos-itens">
+            <h4 class="produtos-nome">${item.name}</h4>
             <p class="descricao">${item.description}</p>
-            <p class="preco-antigo">De:${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de ${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco-antigo">De:${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}x de ${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
             <button class="button-api">Comprar</button>
             
             </div>`);
@@ -30,11 +31,12 @@ fetch(
     products2.forEach((item) => {
       $(`#produtos-linha-dois`).append(`<div class="produtos"> 
             <img class="imagem-produtos" src="http:${item.image}">
-            <h5 class="produtos-nome">${item.name}</h5>
+            <div class="produtos-itens">
+            <h4 class="produtos-nome">${item.name}</h4>
             <p class="descricao">${item.description}</p>
-            <p class="preco-antigo">De: ${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de ${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco-antigo">De: ${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}x de ${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
             <button class="button-api">Comprar</button>
              
             </div>`);
@@ -64,11 +66,12 @@ $(".mais-api").click(() => {
       products1.forEach((item) => {
         $(`#produtos-linha-tres`).append(`<div class="produtos"> 
         <img class="imagem-produtos" src="http:${item.image}">
-                    <h5 class="produtos-nome">${item.name}</h5>
+        <div class="produtos-itens">
+            <h4 class="produtos-nome">${item.name}</h4>
             <p class="descricao">${item.description}</p>
-            <p class="preco-antigo">De:${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de R$${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+            <p class="preco-antigo">De:${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}x de R$${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
             <button class="button-api">Comprar</button>
          
             </div>`);
@@ -77,11 +80,12 @@ $(".mais-api").click(() => {
       products2.forEach((item) => {
         $(`#produtos-linha-quatro`).append(`<div class="produtos"> 
         <img class="imagem-produtos" src="http:${item.image}">
-         <h5 class="produtos-nome">${item.name}</h5>
+        <div class="produtos-itens">
+         <h4 class="produtos-nome">${item.name}</h4>
         <p class="descricao">${item.description}</p>
-        <p class="preco-antigo">De: R$${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
-            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}x de R$${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2})}</p>
+        <p class="preco-antigo">De: R$${item.oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="preco"> Por:${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
+            <p class="parcelamento"> ou ${item.installments.count.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}x de R$${item.installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minDigits: 2 })}</p>
         <button class="button-api">Comprar</button>
             
             </div>`);

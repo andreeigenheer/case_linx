@@ -1,7 +1,10 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
   color: #888888;
 }
 
@@ -11,7 +14,6 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   height: 399px;
   background: #707070 0% 0% no-repeat padding-box;
@@ -78,7 +80,6 @@ body {
   margin-bottom: 80px;
   font-size: 12px;
   line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   color: #888888;
 }
 
@@ -127,7 +128,6 @@ body {
   width: 340px;
   height: 39px;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -236,7 +236,7 @@ body {
   border-radius: 4px;
   opacity: 1;
   text-align: center;
-  font: normal normal normal 16px/16px Helvetica Neue;
+  font: normal normal normal 16px/16px;
   letter-spacing: 0px;
   color: #888888;
   opacity: 1;
@@ -256,7 +256,6 @@ body {
 .ver-mais-button,
 .ver-menos-button {
   color: #888888;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #ffffff;
   border: 1px solid #707070;
@@ -333,7 +332,6 @@ body {
 
 .footer-index {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #ffffff;
   height: 293px;
@@ -371,7 +369,6 @@ body-email {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   width: 600px;
   height: 198px;
@@ -393,7 +390,6 @@ body-email {
 .email-h3 {
   font-size: 40px;
   font-weight: bold;
-  
 }
 
 .linha_3-email {
@@ -401,7 +397,6 @@ body-email {
   font-weight: normal;
   width: 360px;
   line-height: 20px;
-  
 }
 
 .text-introduction {
@@ -409,7 +404,6 @@ body-email {
   font-size: 12px;
   line-height: 20px;
   margin-bottom: 40px;
- 
 }
 
 .introduction-title {
@@ -418,7 +412,6 @@ body-email {
   font-size: 24px;
   font: bold;
   margin-bottom: 20px;
-  
 }
 
 .api-email {
@@ -434,76 +427,6 @@ body-email {
   margin: 0 auto;
 }
 
-.lista-um-email {
-  display: flex;
-}
-
-.produtos-email {
-  padding: 20px;
-}
-
-.imagem-produtos-email {
-  width: 200px;
-  height: 150px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  opacity: 1;
-}
-
-.produtos-nome-email {
-  text-align: left;
-  font: normal normal normal 14px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
-  opacity: 1;
-}
-
-.descricao-email {
-  text-align: left;
-  font: normal normal normal 12px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
-  opacity: 1;
-}
-
-.preco-antigo-email {
-  text-align: left;
-  font: normal normal normal 12px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
-  opacity: 1;
-}
-
-.preco-email {
-  text-align: left;
-  font: normal normal bold 16px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
-  opacity: 1;
-}
-
-.parcelamento-email {
-  text-align: left;
-  font: normal normal normal 12px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
-  opacity: 1;
-}
-
-.button-comprar-email {
-  width: 200px;
-  height: 30px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  opacity: 1;
-  text-align: center;
-  font: normal normal normal 16px/16px Helvetica Neue;
-  letter-spacing: 0px;
-  color: #888888;
-  opacity: 1;
-}
-
 .button-api-email {
   text-align: center;
 }
@@ -513,7 +436,6 @@ body-email {
   border: 1px solid #707070;
   border-radius: 4px;
   opacity: 1;
-  font-family: Arial, Helvetica, sans-serif;
   color: #888888;
   font-size: 16px;
   width: 383px;
@@ -524,7 +446,6 @@ body-email {
 
 .footer-email {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #ffffff;
   width: 600px;
@@ -550,10 +471,6 @@ body-email {
 
 /* Estilização Mobile */
 @media (max-width: 600px) {
-  body {
-    
-  }
-
   .header-index {
     padding: 0 16px;
     z-index: 2;
@@ -617,6 +534,23 @@ body-email {
 
   .container-produtos {
     width: 100%;
+  }
+  .produtos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .produtos-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    padding: 0 0 0 5px;
+  }
+
+  .produtos-itens > p,
+  .produtos-itens > h4 {
+    margin: 0;
   }
 
   .descricao {
