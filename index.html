@@ -67,18 +67,18 @@
       <input class="formulario-input" id="email-form" type="email" required name="email" />
 
       <label for="cpf">CPF:</label>
-      <input class="formulario-input" id="cpf-form" type="text" name="cpf"
-        pattern="([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2})" />
+      <input class="formulario-input" id="cpf-form" type="text" required name="cpf"
+        pattern="([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2})"   oninput="mascara(this)"/>
 
         <div class="genero">
-          <input type="radio" name="genero" />
+          <input type="radio" required name="genero-button"/>
           <label class="genero-radio">Masculino</label>
-          <input type="radio" name="genero" />
+          <input type="radio" name="genero-button" />
           <label class="genero-radio">Feminino</label>
         </div>
       
 
-      <button class="formulario-button" type="submit">Enviar</button>
+      <button class="formulario-button" type="submit" id="enviar-form" onclick=enviar()>Enviar</button>
     </form>
   </section>
 
